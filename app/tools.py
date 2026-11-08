@@ -5,6 +5,9 @@
 """
 
 import json
+import random
+import re
+from datetime import datetime
 from functools import cache
 from pathlib import Path
 
@@ -77,3 +80,46 @@ def get_lecture_summary(lecture: int) -> str:
         available = sorted(p.stem for p in (DATA_DIR / "lectures").glob("*.md"))
         return f"第{lecture}回の要点はまだありません。用意されている回: {', '.join(available)}"
     return path.read_text(encoding="utf-8")
+
+
+def make_quiz(lecture: int) -> str:
+    """指定した回（1始まりの整数）の用語から確認問題を1問作り、問題と答えを返す。
+
+    「第2回の確認問題を出して」のように、復習用の問題を求められたときに使う。
+    返り値の answer は、利用者が答えたあとの答え合わせに使う。
+    """
+    terms = [e for e in load_glossary() if e["lecture"] == lecture]
+    if not terms:
+        return f"第{lecture}回の用語は用語集にありません。問題を作れませんでした。"
+    entry = random.choice(terms)
+    return json.dumps(
+        {"question": f"「{entry['term']}」の意味は？", "answer": entry["definition"]},
+        ensure_ascii=False,
+    )
+
+
+# 学習ログの保存先（.gitignore 済み。個人の記録なので共有しない）
+LOG_DIR = Path(__file__).resolve().parent.parent / "learning_log"
+
+
+def save_learning_log(title: str, content: str) -> str:
+    """今回学んだことを、学習ログとして learning_log/ フォルダに Markdown で保存する。
+
+    利用者が「今の内容を記録して」「学習ログに残して」のように保存を頼んだときだけ使う。
+    頼まれていないのに自分から呼ばない。
+    title には短い見出し（例: "LoRAとQLoRAの違い"）、content には保存する本文（要点を箇条書き）を入れる。
+    保存前の確認はプログラム側が行うので、会話で確認を求めずにそのままこのツールを呼ぶ。
+    """
+    title = title.strip()
+    if not title or not content.strip():
+        return "title と content の両方を指定してください。保存していません。"
+    LOG_DIR.mkdir(exist_ok=True)
+    now = datetime.now()
+    # ファイル名に使えない文字は _ に置き換え、長すぎる見出しは切り詰める
+    safe_title = re.sub(r'[\\/:*?"<>|\s]+', "_", title)[:40]
+    path = LOG_DIR / f"{now:%Y%m%d-%H%M%S}_{safe_title}.md"
+    path.write_text(
+        f"# {title}\n\n- 保存日時: {now:%Y-%m-%d %H:%M:%S}\n\n{content.strip()}\n",
+        encoding="utf-8",
+    )
+    return f"学習ログを保存しました: {path.relative_to(LOG_DIR.parent).as_posix()}"
