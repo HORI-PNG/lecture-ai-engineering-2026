@@ -1,0 +1,143 @@
+{
+  "土曜日も開いていますか": {
+    "needs_review": false,
+    "must_include": [
+      "8:45",
+      "21:00"
+    ]
+  },
+  "平日の開館時刻と閉館時刻を教えてください": {
+    "needs_review": false,
+    "must_include": [
+      "8:45",
+      "21:00"
+    ]
+  },
+  "図書館を利用できる時間帯は？": {
+    "needs_review": false,
+    "must_include": [
+      "8:45",
+      "21:00"
+    ]
+  },
+  "学部生の貸出のルールは？": {
+    "needs_review": false,
+    "must_include": [
+      "10 冊",
+      "2 週間"
+    ]
+  },
+  "学部生が借りられる冊数と期間を教えてください": {
+    "needs_review": false,
+    "must_include": [
+      "10 冊",
+      "2 週間"
+    ]
+  },
+  "一度に借りられる本の上限は何冊ですか": {
+    "needs_review": false,
+    "must_include": [
+      "10 冊",
+      "2 週間"
+    ]
+  },
+  "貸出を延ばしたいのですが": {
+    "needs_review": false,
+    "must_include": [
+      "1 回",
+      "マイライブラリ"
+    ]
+  },
+  "貸出の延長はどこで申し込みますか": {
+    "needs_review": false,
+    "must_include": [
+      "1 回",
+      "マイライブラリ"
+    ]
+  },
+  "借りた本の期限を延ばすことはできますか": {
+    "needs_review": false,
+    "must_include": [
+      "1 回",
+      "マイライブラリ"
+    ]
+  },
+  "本を返し忘れたらどうなりますか": {
+    "needs_review": false,
+    "must_include": [
+      "貸出",
+      "停止"
+    ]
+  },
+  "延滞したときの罰則を教えてください": {
+    "needs_review": false,
+    "must_include": [
+      "貸出",
+      "停止"
+    ]
+  },
+  "期限を過ぎて返すと何か制限がかかりますか": {
+    "needs_review": false,
+    "must_include": [
+      "貸出",
+      "停止"
+    ]
+  },
+  "複写の料金は？": {
+    "needs_review": false,
+    "must_include": [
+      "10 円",
+      "学生証"
+    ]
+  },
+  "コピー 1 枚の値段はいくらですか": {
+    "needs_review": false,
+    "must_include": [
+      "10 円",
+      "学生証"
+    ]
+  },
+  "コピー料金の支払い方法は？": {
+    "needs_review": false,
+    "must_include": [
+      "10 円",
+      "学生証"
+    ]
+  },
+  "年末年始は開館していますか": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "延長すると何日間借りられますか": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "他大学の学生も利用できますか": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "雑誌は借りられますか": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "卒業生も本を借りられますか": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "スキャナーは使えますか": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  }
+}
