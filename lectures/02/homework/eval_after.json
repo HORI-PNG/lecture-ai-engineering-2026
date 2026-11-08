@@ -1,0 +1,201 @@
+{
+  "summary": {
+    "label": "after",
+    "n": 21,
+    "format_rate": 1.0,
+    "content_rate": 0.9523809523809523,
+    "both_rate": 0.9523809523809523,
+    "seconds": 42.7
+  },
+  "rows": [
+    {
+      "question": "土曜日も開いていますか",
+      "raw": "{\"answer\": \"開館時間は平日 8:45〜21:00、土曜 10:00〜17:00 です。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "平日の開館時刻と閉館時刻を教えてください",
+      "raw": "{\"answer\": \"開館時間は平日 8:45〜21:00、土曜 10:00〜17:00 です。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "図書館を利用できる時間帯は？",
+      "raw": "{\"answer\": \"開館時間は平日 8:45〜21:00、土曜 10:00〜17:00 です。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "学部生の貸出のルールは？",
+      "raw": "{\"answer\": \"学部生は図書を 10 冊まで、2 週間借りられます。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "学部生が借りられる冊数と期間を教えてください",
+      "raw": "{\"answer\": \"学部生は図書を 10 冊まで、2 週間借りられます。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "一度に借りられる本の上限は何冊ですか",
+      "raw": "{\"answer\": \"学部生は図書を 10 冊まで、2 週間借りられます。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "貸出を延ばしたいのですが",
+      "raw": "{\"answer\": \"貸出の延長は 1 回まで、マイライブラリから手続きできます。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "貸出の延長はどこで申し込みますか",
+      "raw": "{\"answer\": \"貸出の延長は 1 回まで、マイライブラリから手続きできます。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "借りた本の期限を延ばすことはできますか",
+      "raw": "{\"answer\": \"貸出の延長は 1 回まで、マイライブラリから手続きできます。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "本を返し忘れたらどうなりますか",
+      "raw": "{\"answer\": \"返却が遅れると、遅れた日数と同じ日数だけ貸出が停止されます。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "延滞したときの罰則を教えてください",
+      "raw": "{\"answer\": \"返却が遅れると、遅れた日数と同じ日数だけ貸出が停止されます。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "期限を過ぎて返すと何か制限がかかりますか",
+      "raw": "{\"answer\": \"返却が遅れると、遅れた日数と同じ日数だけ貸出が停止されます。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "複写の料金は？",
+      "raw": "{\"answer\": \"コピーは 1 枚 10 円で、学生証のプリペイド残高から支払います。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "コピー 1 枚の値段はいくらですか",
+      "raw": "{\"answer\": \"コピーは 1 枚 10 円で、学生証のプリペイド残高から支払います。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "コピー料金の支払い方法は？",
+      "raw": "{\"answer\": \"コピーは 1 枚 10 円で、学生証のプリペイド残高から支払います。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "年末年始は開館していますか",
+      "raw": "{\"answer\": \"この FAQ には記載がありません。運営に確認が必要です。\", \"needs_review\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": true
+    },
+    {
+      "question": "延長すると何日間借りられますか",
+      "raw": "{\"answer\": \"貸出の延長は 1 回まで、マイライブラリから手続きできます。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "他大学の学生も利用できますか",
+      "raw": "{\"answer\": \"この FAQ には記載がありません。運営に確認が必要です。\", \"needs_review\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": true
+    },
+    {
+      "question": "雑誌は借りられますか",
+      "raw": "{\"answer\": \"この FAQ には記載がありません。運営に確認が必要です。\", \"needs_review\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": true
+    },
+    {
+      "question": "卒業生も本を借りられますか",
+      "raw": "{\"answer\": \"この FAQ には記載がありません。運営に確認が必要です。\", \"needs_review\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": true
+    },
+    {
+      "question": "スキャナーは使えますか",
+      "raw": "{\"answer\": \"この FAQ には記載がありません。運営に確認が必要です。\", \"needs_review\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": true
+    }
+  ]
+}
